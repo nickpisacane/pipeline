@@ -70,7 +70,7 @@ Appends commands to the stdio chain.
 func (p *Pipeline) Prepend(...*exec.Cmd)
 ```
 Prepend commands to the stdio chain.
-### StdioPipe
+### StdinPipe
 ```go
 func (p *Pipeline) StidinPipe() (io.ReadWriter, error)
 ```
