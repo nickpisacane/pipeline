@@ -4,7 +4,7 @@ Provides Unix style piping for the Go's exec Commands. The Pipeline type attempt
 
 ## Getting Started
 ```go
-pacakge main
+package main
 
 import (
 	"os/exec"
@@ -24,6 +24,11 @@ func main() {
 	pipe2 := pipeline.NewFromString(`echo "console.log('print \'TEST\'');" | node | python`)
 }
 ```
+## Installation
+```bash
+go get github.com/Nindaff/pipeline
+```
+
 ## Usage
 ### type Pipeline
 ```go
@@ -52,7 +57,7 @@ New Pipeline, optional commands.
 ```go
 func NewFromString(string) *Pipeline
 ```
-New pipeling from command string.
+New Pipeline from command string.
 ### ParseString
 ```go
 func ParseString(string) []*exec.Cmd
