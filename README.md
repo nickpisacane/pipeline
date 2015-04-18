@@ -58,7 +58,7 @@ New Pipeline, optional commands.
 func NewFromString(string) *Pipeline
 ```
 New Pipeline from command string.
-### ParseString
+### ParseCommand
 ```go
 func ParseCommand(string) []*exec.Cmd
 ```
