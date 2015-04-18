@@ -8,13 +8,13 @@ import (
 
 // Returns new pipeline for string.
 func NewFromString(exp string) *Pipeline {
-	cmds := ParseString(exp)
+	cmds := ParseCommand(exp)
 	return NewPipeline(cmds...)
 }
 
 // Parses command string expression. Returns
 // a slice of exec.Cmds.
-func ParseString(exp string) []*exec.Cmd {
+func ParseCommand(exp string) []*exec.Cmd {
 	rawCommands := mapTrim(strings.Split(exp, "|"), strings.TrimSpace)
 	commands := make([]*exec.Cmd, len(rawCommands))
 	for i, cmd := range rawCommands {

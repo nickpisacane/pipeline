@@ -1,6 +1,6 @@
 # pipeline
 
-Provides Unix style piping for the Go's exec Commands. The Pipeline type attempts to stay similar to the os/exec Cmd type.
+Provides Unix style piping for the Go's exec Commands. The Pipeline api attempts to stay close to the os/exec api.
 
 ## Getting Started
 ```go

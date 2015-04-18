@@ -102,7 +102,9 @@ func (p *Pipeline) Run() error {
 		}
 		cmd.Stdout = &p.Stdout
 		cmd.Stderr = &p.Stderr
-		cmd.Run()
+		if err := cmd.Run(); err != nil {
+			return err
+		}
 	}
 	return nil
 }
