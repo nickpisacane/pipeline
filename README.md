@@ -60,9 +60,9 @@ func NewFromString(string) *Pipeline
 New Pipeline from command string.
 ### ParseString
 ```go
-func ParseString(string) []*exec.Cmd
+func ParseCommand(string) []*exec.Cmd
 ```
-Parsed command string and returns slice of exec.Cmd.
+Parse commands from string.
 
 ## Pipeline Methods
 ### Append
